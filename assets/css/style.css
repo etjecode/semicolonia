@@ -25,7 +25,7 @@ light-turquoise-color-feyzan: rgb(18,181,186);
 
 body {
   font-family: 'Ruluko', sans-serif;
-  color: #212529;
+  color: rgb(48,48,48);
 }
 
 a:hover {
@@ -152,7 +152,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .get-started a:hover {
-  background: rgb(255, 209, 3);
+  background-color: aliceblue;
+  /* background: rgb(255, 209, 3); */
   color: #fff;
 }
 
