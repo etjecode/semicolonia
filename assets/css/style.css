@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Ruluko', sans-serif;
   color: #212529;
 }
 
@@ -21,11 +21,11 @@ a:hover {
   color: #0b6bd3;
   text-decoration: none;
 }
-
+/* 
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
   font-family: 'Pacifico', cursive;
-}
+} */
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 3px;
   right: 15px;
   bottom: 15px;
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .back-to-top:hover {
   color: #fff;
-  background: rosybrown;
+  background: rgb(255, 209, 3);
   transition: background 0.2s ease-in-out;
 }
 
@@ -125,17 +125,16 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #4e4039;
   padding: 10px 15px;
   transition: 0.3s;
-  font-size: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: royalblue;
+  color: darkcyan;
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
   border-radius: 50px;
   margin: 0 15px;
@@ -143,7 +142,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .get-started a:hover {
-  background: rosybrown;
+  background: rgb(255, 209, 3);
   color: #fff;
 }
 
@@ -181,7 +180,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: royalblue;
+  color: darkcyan;
 }
 
 .nav-menu .drop-down > a:after {
@@ -234,7 +233,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rosybrown;
+  background: rgb(255, 209, 3);
   transition: 0.4s;
 }
 
@@ -254,12 +253,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: rosybrown;
+  color: rgb(255, 209, 3);
   text-decoration: none;
 }
 
 .mobile-nav .get-started a {
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
   border-radius: 50px;
   margin: 15px;
@@ -267,7 +266,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav .get-started a:hover {
-  background: rosybrown;
+  background: rgb(255, 209, 3);
   color: #fff;
 }
 
@@ -375,11 +374,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: royalblue;
+  background: darkcyan;
 }
 
 #hero .btn-get-started:hover {
-  background: rosybrown;
+  background: rgb(255, 209, 3);
 }
 
 #hero .animated {
@@ -487,7 +486,7 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background: royalblue;
+  background: darkcyan;
   bottom: 0;
   left: calc(50% - 30px);
 }
@@ -549,14 +548,14 @@ section {
 
 .services .icon-box:hover {
   transform: translateY(-5px);
-  border-color: rosybrown;
+  border-color: rgb(255, 209, 3);
 }
 
 .services .icon i {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: rosybrown;
+  color: rgb(255, 209, 3);
 }
 
 .services .title {
@@ -603,7 +602,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: royalblue;
+  color: darkcyan;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -648,7 +647,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: royalblue;
+  color: darkcyan;
   margin: 0 4px;
   font-size: 18px;
   line-height: 1;
@@ -668,7 +667,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
 }
 
@@ -712,7 +711,7 @@ section {
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
-.faq {
+/* .faq {
   padding: 60px 0;
 }
 
@@ -730,7 +729,7 @@ section {
   position: relative;
   font-size: 18px;
   font-weight: 600;
-  color: royalblue;
+  color: darkcyan;
 }
 
 .faq .faq-list i {
@@ -747,7 +746,7 @@ section {
 }
 
 .faq .faq-list a.collapse {
-  color: royalblue;
+  color: darkcyan;
 }
 
 .faq .faq-list a.collapsed {
@@ -755,16 +754,22 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: royalblue;
+  color: darkcyan;
 }
 
 .faq .faq-list a.collapsed i::before {
   content: "\eab2" !important;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .team {
   background: #fff;
   padding: 60px 0;
@@ -829,7 +834,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: royalblue;
+  color: darkcyan;
 }
 
 .team .member .social i {
@@ -888,15 +893,15 @@ section {
 }
 
 .stacks .owl-dot.active {
-  background-color: royalblue !important;
+  background-color: darkcyan !important;
 }
 
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid royalblue;
-  border-bottom: 3px solid royalblue;
+  border-top: 3px solid darkcyan;
+  border-bottom: 3px solid darkcyan;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -905,7 +910,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: royalblue;
+  color: darkcyan;
   float: left;
   width: 44px;
   height: 44px;
@@ -956,19 +961,19 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid royalblue;
-  border-bottom: 3px solid royalblue;
+  border-top: 3px solid darkcyan;
+  border-bottom: 3px solid darkcyan;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -989,7 +994,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: royalblue;
+  background: darkcyan;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1039,7 +1044,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: royalblue;
+  background: darkcyan;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1048,7 +1053,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: rosybrown;
+  background: rgb(255, 209, 3);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1121,7 +1126,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
   transition: 0.3s;
   border-radius: 4px;
@@ -1129,7 +1134,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: rosybrown;
+  background: rgb(255, 209, 3);
 }
 
 #footer .footer-top {
@@ -1201,13 +1206,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: royalblue;
+  color: darkcyan;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: royalblue;
+  background: darkcyan;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1220,7 +1225,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: rosybrown;
+  background: rgb(255, 209, 3);
   color: #fff;
   text-decoration: none;
 }
@@ -1238,7 +1243,7 @@ section {
 }
 
 #footer .credits a {
-  color: royalblue;
+  color: darkcyan;
 }
 
 @media (max-width: 575px) {
