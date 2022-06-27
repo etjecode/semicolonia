@@ -8,6 +8,21 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* 
+Colors
+orange-color-ercan: rgb(251,98,30);
+orange-color-sakir: rgb(252,97,31);
+orange-color-feyzan: rgb(243,100,30);
+yellow-color: rgb(245,192,2);
+dark-color: rgb(48,48,48);
+dark-color-feyzan: rgb(15,48,63);
+dark-turquoise-color: rgb(46,88,112);
+turquoise-color: rgb(22,149,166);
+light-turquoise-color: rgb(17,178,188);
+turquoise-color-feyzan: rgb(21,148,163);
+light-turquoise-color-feyzan: rgb(18,181,186); 
+*/
+
 body {
   font-family: 'Ruluko', sans-serif;
   color: #212529;
