@@ -28,12 +28,7 @@ body {
   color: #212529;
 }
 
-a {
-  color: #007bff;
-}
-
 a:hover {
-  color: #0b6bd3;
   text-decoration: none;
 }
 /* 
