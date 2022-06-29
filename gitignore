@@ -1,3 +1,5 @@
-../forms/Readme.txt
 /forms/node_modules/
+.env
+/data/
+docker-compose.yml
 /forms/package-lock.json
