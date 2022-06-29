@@ -544,6 +544,8 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
+  width: 250px;
+  height: 250px;
   padding: 30px;
   position: relative;
   overflow: hidden;
