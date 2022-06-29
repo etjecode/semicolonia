@@ -1,4 +1,3 @@
-assets/img
-Readme.txt
-forms/Readme.txt
-forms/node_modules
+../forms/Readme.txt
+../forms/node_modules
+../forms/package-lock.json
