@@ -4,8 +4,10 @@ const app = express();
   
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
     
+// app.use(express.urlencoded());
+
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile();
 });
     
 app.post('/', urlencodedParser, (req, res) => {
@@ -13,4 +15,4 @@ app.post('/', urlencodedParser, (req, res) => {
     res.sendStatus(200);
 });
     
-app.listen(5500);
+app.listen(3000);
