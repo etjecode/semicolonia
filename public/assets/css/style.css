@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
-  border-radius: 3px;
+  border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
   color: #fff;
@@ -544,8 +544,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  width: 250px;
-  height: 250px;
+  min-height: 250px;
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -1055,7 +1054,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .node-email-form button[type="submit"] {
+.contact .node-email-form button.contact-btn {
   background: darkcyan;
   border: 0;
   padding: 10px 24px;
@@ -1064,7 +1063,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .node-email-form button[type="submit"]:hover {
+.contact .node-email-form button.contact-btn:hover {
   background: rgb(255, 209, 3);
 }
 

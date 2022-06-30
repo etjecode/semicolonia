@@ -2,9 +2,9 @@ jQuery(document).ready(function($) {
   "use strict";
 
   //Contact
-  $('form.php-email-form').submit(function() {
-   
-    var f = $(this).find('.form-group'),
+  $("#contact-btn").click(function() {
+   var this_form = $(this).closest("form")
+    var f = this_form.find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
@@ -90,16 +90,7 @@ jQuery(document).ready(function($) {
       }
     });
     if (ferror) return false;
-    else var str = $(this).serialize();
-
-    var this_form = $(this);
-    var action = $(this).attr('action');
-
-    if( ! action ) {
-      this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown().html('The form action property is not set!');
-      return false;
-    }
+    else var str = this_form.serialize();
     
     this_form.find('.sent-message').slideUp();
     this_form.find('.error-message').slideUp();
@@ -107,20 +98,99 @@ jQuery(document).ready(function($) {
     
     $.ajax({
       type: "POST",
-      url: action,
+      url: "/contact",
       data: str,
-      success: function(msg) {
-        if (msg == 'OK') {
+      error: function(err) {
+
+      },
+      success: function(res) {
+        if (res.status == true) {
           this_form.find('.loading').slideUp();
           this_form.find('.sent-message').slideDown();
+          this_form.find('.sent-message').html(res.message);
           this_form.find("input:not(input[type=submit]), textarea").val('');
         } else {
           this_form.find('.loading').slideUp();
-          this_form.find('.error-message').slideDown().html(msg);
+          this_form.find('.error-message').slideDown().html(res.message);
         }
       }
     });
     return false;
   });
+
+  $("#subscribe-btn").click(function() {
+    var this_form = $(this).closest("form")
+
+     var f = this_form,
+       ferror = false,
+       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+ 
+    this_form.closest(".container").find(".message-alerts").children().each(function() {
+      var i = $(this);
+
+      i.addClass("d-none")
+
+    })
+
+     f.children('input').each(function() { // run all inputs
+      
+       var i = $(this); // current input
+       var rule = i.attr('data-rule');
+ 
+       if (rule !== undefined) {
+         var ierror = false; // error flag for current input
+         var pos = rule.indexOf(':', 0);
+         if (pos >= 0) {
+           var exp = rule.substr(pos + 1, rule.length);
+           rule = rule.substr(0, pos);
+         } else {
+           rule = rule.substr(pos + 1, rule.length);
+         }
+ 
+         switch (rule) {
+           
+           case 'email':
+             if (!emailExp.test(i.val())) {
+               ferror = ierror = true;
+               this_form.closest(".container").find('.validate').removeClass("d-none").html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+
+             }
+             break;
+         }
+       }
+     });
+    
+     if (ferror) return false;
+     
+     else var str = this_form.serialize();
+
+     this_form = this_form.closest(".container")
+
+     
+     this_form.find('.sent-message').slideUp();
+     this_form.find('.error-message').slideUp();
+     this_form.find('.loading').slideDown();
+     
+     $.ajax({
+       type: "POST",
+       url: "/newsletter",
+       data: str,
+       error: function(err) {
+ 
+       },
+       success: function(res) {
+         if (res.status == true) {
+           this_form.find('.loading').slideUp();
+           this_form.find('.sent-message').slideDown().removeClass("d-none");
+           this_form.find('.sent-message').html(res.message);
+           this_form.find("input:not(input[type=submit]), textarea").val('');
+         } else {
+           this_form.find('.loading').slideUp();
+           this_form.find('.error-message').slideDown().removeClass("d-none").html(res.message);
+         }
+       }
+     });
+     return false;
+   });
 
 });

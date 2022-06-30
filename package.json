@@ -1,17 +1,15 @@
 {
-  "name": "forms",
+  "name": "form",
   "version": "1.0.0",
-  "main": "contact.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node contact.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.0",
     "express": "^4.18.1"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }

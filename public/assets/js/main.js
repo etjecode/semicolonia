@@ -140,4 +140,14 @@
     easing: "ease-in-out"
   });
 
+  $('*[data-collapse-container="services"]').each(function() {
+    var i = $(this)
+    
+    i.on("click", function() {
+      var element = $(this).data("target")
+      $("#service-link-" + element).click()
+      
+    })
+  })
+
 })(jQuery);

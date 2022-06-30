@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -21,15 +21,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/ac4a986ece.js" crossorigin="anonymous"></script>
 
@@ -63,6 +63,16 @@
           <li class="get-started"><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
+      <nav class="mobile-nav d-lg-none">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#stacks">Stacks</a></li>
+          <li class="get-started"><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
       <!-- .nav-menu -->
 
     </div>
@@ -77,15 +87,12 @@
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
           <h1>The story never ends with semicolonia;</h1>
           <h2>We are a team of software developers who like to make things happen.</h2>
-            <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li class="get-started"><a href="#contact">Contact Us</a></li>
-            </ul>
-          </nav>
+          <a href="#contact" class="btn-get-started">Contact Us</a>
+          
 
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="./svg/1.png" class="img-fluid animated" alt="">
+          <img src="/svg/1.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -100,7 +107,7 @@
 
         <div class="row justify-content-between">
           <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="./svg/2.png" class="img-fluid" alt="" data-aos="zoom-in">
+            <img src="/svg/2.png" class="img-fluid" alt="" data-aos="zoom-in">
           </div>
           <div class="col-lg-6 pt-5 pt-lg-0">
             <h3 data-aos="fade-up">Why you should choose us</h3>
@@ -137,41 +144,62 @@
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
+            <div class="icon-box col">
               <div class="icon"><i class="fa-solid fa-brush"></i></div>
-              <h4 class="title"><a href="#">Frontend Development</a></h4>
+              <h4 class="title"><a id="service-link-frontend" data-toggle="collapse" href="#service-frontend" role="button" aria-expanded="false"
+                  aria-controls="service-frontend">Frontend Development</a></h4>
               <p class="description">HTML/CSS/SASS/Bootstrap</p>
               <p class="description">JavaScript/Vue</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
+            <div class="icon-box col">
               <div class="icon"><i class="fa-solid fa-server"></i></div>
-              <h4 class="title">Backend Development</h4>
+              <h4 class="title"><a id="service-link-backend" data-toggle="collapse" href="#service-backend" role="button" aria-expanded="false" aria-controls="service-backend">Backend Development</a></h4>
               <p class="description">PHP/Laravel</p>
               <p class="description">JavaScript/Node</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
+            <div class="icon-box col">
               <div class="icon"><i class="fa-solid fa-computer"></i></div>
-              <h4 class="title">DevOps</h4>
+              <h4 class="title"><a id="service-link-devops" data-toggle="collapse" href="#service-devops" role="button" aria-expanded="false"
+                  aria-controls="service-devops">DevOps</a></h4>
               <p class="description">CI/CD</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
-            <div class="icon-box">
+            <div class="icon-box col">
               <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
-              <h4 class="title">Security</h4>
+              <h4 class="title"><a id="service-link-security" data-toggle="collapse" href="#service-security" role="button" aria-expanded="false"
+                  aria-controls="service-security">Security</a></h4>
               <p class="description">Pentesting</p>
             </div>
           </div>
 
         </div>
 
+      </div>
+      <div class="container">
+        <div class="collapse" id="service-frontend" data-parent="#services">
+          <div class="card card-body">
+            1 </div>
+        </div>
+        <div class="collapse" id="service-backend" data-parent="#services">
+          <div class="card card-body">
+            2 </div>
+        </div>
+        <div class="collapse" id="service-devops" data-parent="#services">
+          <div class="card card-body">
+            3 </div>
+        </div>
+        <div class="collapse" id="service-security" data-parent="#services">
+          <div class="card card-body">
+            4 </div>
+        </div>
       </div>
     </section>
     <!-- End Services Section -->
@@ -189,7 +217,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="member" style="background-color: rgb(252,97,31)">
-              <img src="./svg/team/avatar-svgrepo-com (2).svg" class="img-fluid" alt="team-member-sakir">
+              <img src="/svg/team/avatar-svgrepo-com (2).svg" class="img-fluid" alt="team-member-sakir">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Sakir</h4>
@@ -206,7 +234,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="member" style="background-color: rgb(18,181,186)">
-              <img src="./svg/team/avatar-svgrepo-com (7).svg" class="img-fluid" alt="team-member-feyzan">
+              <img src="/svg/team/avatar-svgrepo-com (7).svg" class="img-fluid" alt="team-member-feyzan">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Feyzan</h4>
@@ -214,7 +242,8 @@
                 </div>
                 <div class="social">
                   <a href="https://github.com/etjecode" target="_blank"><i class="icofont-github"></i></a>
-                  <a href="https://www.linkedin.com/in/feyzan-aydin/" target="_blank"><i class="icofont-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/feyzan-aydin/" target="_blank"><i
+                      class="icofont-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -222,7 +251,7 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="member" style="background-color: rgb(245,192,2)">
-              <img src="./svg/team/avatar-svgrepo-com.svg" class="img-fluid" alt="team-member-ercan">
+              <img src="/svg/team/avatar-svgrepo-com.svg" class="img-fluid" alt="team-member-ercan">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Ercan</h4>
@@ -252,22 +281,22 @@
         </div>
 
         <div class="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100">
-     
-          <img src="./svg/stacks/html5.svg" style="width:50%" alt="HTML5">
-          <img src="./svg/stacks/css3.svg" style="width:50%" alt="CSS3">
-          <img src="./svg/stacks/sass.svg" style="width:50%" alt="SASS">
-          <img src="./svg/stacks/bootstrap.svg" style="width:50%" alt="Bootstrap">
-          <img src="./svg/stacks/javascript.png" style="width:50%" alt="JavaScript">
-          <img src="./svg/stacks/vuejs.svg" style="width:50%" alt="Vue.js">
-          <img src="./svg/stacks/jquery.png" style="width:50%" alt="JQuery">
-          <img src="./svg/stacks/nodejs.svg" style="width:75%; margin-top:-10px" alt="Node.js">
-          <img src="./svg/stacks/express.svg" style="width:70%; margin-top:35px" alt="Express.js">
-          <img src="./svg/stacks/mongodb.png" style="width:100%; margin-top:20px" alt="mongoDB">
-          <img src="./svg/stacks/php.png" style="width:50%; margin-top:10px" alt="php">
-          <img src="./svg/stacks/codeigniter.png" style="width:50%" alt="CodeIgniter">
-          <img src="./svg/stacks/laravel.svg" style="width:50%" alt="laravel">
-          <img src="./svg/stacks/linux.png" style="width:50%; margin-top:10px" alt="Linux">
-        
+
+          <img src="/svg/stacks/html5.svg" style="width:50%" alt="HTML5">
+          <img src="/svg/stacks/css3.svg" style="width:50%" alt="CSS3">
+          <img src="/svg/stacks/sass.svg" style="width:50%" alt="SASS">
+          <img src="/svg/stacks/bootstrap.svg" style="width:50%" alt="Bootstrap">
+          <img src="/svg/stacks/javascript.png" style="width:50%" alt="JavaScript">
+          <img src="/svg/stacks/vuejs.svg" style="width:50%" alt="Vue.js">
+          <img src="/svg/stacks/jquery.png" style="width:50%" alt="JQuery">
+          <img src="/svg/stacks/nodejs.svg" style="width:75%; margin-top:-10px" alt="Node.js">
+          <img src="/svg/stacks/express.svg" style="width:70%; margin-top:35px" alt="Express.js">
+          <img src="/svg/stacks/mongodb.png" style="width:100%; margin-top:20px" alt="mongoDB">
+          <img src="/svg/stacks/php.png" style="width:50%; margin-top:10px" alt="php">
+          <img src="/svg/stacks/codeigniter.png" style="width:50%" alt="CodeIgniter">
+          <img src="/svg/stacks/laravel.svg" style="width:50%" alt="laravel">
+          <img src="/svg/stacks/linux.png" style="width:50%; margin-top:10px" alt="Linux">
+
         </div>
       </div>
     </section>
@@ -282,10 +311,10 @@
           <!-- <p>Contact us to get started</p> -->
         </div>
 
-        <div class="row">
+        <div class="row d-flex align-items-stretch">
 
           <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="info" style="height: 580px">
+            <div class="info">
 
               <div class="email">
                 <i class="icofont-envelope"></i>
@@ -305,20 +334,21 @@
                 <p>Turkey</p>
               </div>
 
-              <img src="./svg/109-map-location.png" width="70%">
-              
-              
+
+
+
             </div>
 
           </div>
 
-          <div style="height: 580px" class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
 
-            <form action="/" method="post" role="form" class="node-email-form">
+            <form role="form" class="node-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group col-md-6">
@@ -327,25 +357,27 @@
                   <div class="validate"></div>
                 </div>
               </div>
-              
+
               <div class="form-row">
-                <div style="display: flex; flex-direction: column">
-                <div class="form-group">
+
+                <div class="form-group col-md-6">
                   <label for="budget">Budget</label>
-                  <select id="budget">
+                  <select class="form-control" id="budget">
+                    <option value="" disabled selected>Select budget</option>
                     <option value="40-50">40-50</option>
-                    <option value="50*60">50-60</option>
+                    <option value="50-60">50-60</option>
                     <option value="60-70">60-70</option>
                     <option value="70-80">70-80</option>
-                    <option value="80*90">80-90</option>
+                    <option value="80-90">80-90</option>
                     <option value="90-100">90-100</option>
                   </select>
                   <div class="validate"></div>
                 </div>
-              
-                <div class="form-group">
-                  <label for="subject">Project Requirements</label>
-                  <select id="work-type">
+
+                <div class="form-group col-md-6">
+                  <label for="project">Project Requirements</label>
+                  <select class="form-control" id="project">
+                    <option value="" disabled selected>Select project</option>
                     <optgroup label="Select services">
                       <option value="frontend">Frontend Development</option>
                       <option value="backend">Backend Development</option>
@@ -361,25 +393,28 @@
                   </select>
                   <div class="validate"></div>
                 </div>
-                </div>
+
               </div>
 
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write your message here"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write your message here"></textarea>
                 <div class="validate"></div>
               </div>
-            
+
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message"></div>
               </div>
-            
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            
+
+              <div class="text-center">
+                <button id="contact-btn" class="contact-btn" type="button">Send Message</button>
+              </div>
+
             </form>
-          
+
           </div>
 
         </div>
@@ -399,11 +434,19 @@
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>You can subscribe to our newsletter to get updated about us.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
+            <form>
+              <input type="email" name="email" class="form-control" id="email" data-rule="email" data-msg="Please enter a valid email" />
+              <input type="submit" value="Subscribe" id="subscribe-btn">
             </form>
           </div>
         </div>
+
+        <div class="mt-3 message-alerts">
+          <div class="d-none validate alert alert-danger" role="alert"></div>
+          <div class="d-none error-message alert alert-danger" role="alert"></div>
+          <div class="d-none sent-message alert alert-success" role="alert"></div>
+        </div>
+
       </div>
     </div>
 
@@ -413,29 +456,29 @@
 
           <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up" data-aos-delay="100">
             <h3>semicolonia;</h3>
-              <strong>Email:</strong> contact@semicolonia.com<br>
-              <strong>Telegram:</strong> semicoloniacom<br>
+            <strong>Email:</strong> contact@semicolonia.com<br>
+            <strong>Telegram:</strong> semicoloniacom<br>
 
             </p>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links nav-menu" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
             <!-- <h4>Navigation</h4> -->
-            <ul style="display: flex; align-items: left; flex-direction: column;">
-              <li><i class="bx bx-chevron-right"></i> <a href="#header">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#stacks">Stacks</a></li>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#header">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#about">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#team">Team</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#stacks">Stacks</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links nav-menu" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
             <!-- <h4>Our Services</h4> -->
-            <ul style="display: flex; align-items: left; flex-direction: column;">
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Frontend Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Backend Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">DevOps</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Security</a></li>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services" data-target="frontend" data-collapse-container="services">Frontend Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services" data-target="backend" data-collapse-container="services">Backend Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services" data-target="devops" data-collapse-container="services">DevOps</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="scrollto" href="#services" data-target="security" data-collapse-container="services">Security</a></li>
             </ul>
           </div>
 
@@ -473,7 +516,7 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/node-email-form/validate.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>

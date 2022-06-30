@@ -1,5 +1,3 @@
-/forms/node_modules/
-.env
-/data/
-docker-compose.yml
-/forms/package-lock.json
+/form/node_modules/
+/form/public/.env
+/form/package-lock.json
